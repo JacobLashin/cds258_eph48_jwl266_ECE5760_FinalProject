@@ -83,7 +83,7 @@
         <h5 style="text-align:center">The offset and amplifier circuit with filters</h5>
         <br>
         <p style="text-align:center"><img src="images/circuit-diagram.png" alt="Circuit diagram" width="600" height="auto"></p>
-        <h5 style="text-align:center">Diagram of circuit with values</h5>
+        <h5 style="text-align:center">Diagram of circuit repeated for each guitar channel</h5>
         <h3>Software Design</h3>
         <p style="text-indent: 60px">The only functionality that the HPS was responsible for was to serve as a user interface (UI) to control the pitch channels for each string on the guitar. We utilized pthreads to be able to read inputs through the terminal provided by the user and process and write the inputs to respective memory-mapped addresses. We utilized 12 PIOs: one for pitch shift magnitude and another for pitch shift direction for each of the six guitar channels. The HPS UI asks the user for the number corresponding to the guitar string, pitch shift direction (up or down), and the magnitude of the pitch shift. The UI is designed such that the pitch can only be shifted up or down a full octave which is denoted by a shift input of 12.</p>
         <br>
